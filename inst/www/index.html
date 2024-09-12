@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  {{ headContent() }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.3/bootbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/cytoscape/cytoscape.js-panzoom@master/cytoscape.js-panzoom.css">
+  <!-- todo check remove -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+  <!-- it fixes customized built-in element in Safari and older browsers -->
+  <script src="//cdn.jsdelivr.net/npm/@ungap/custom-elements"></script>
+
+
+  <style>
+    .modal-dialog {
+      width: 90%;
+      /* or any desired width */
+      height: 90%;
+      /* or any desired height */
+      margin: auto;
+      /* Centers the modal */
+    }
+
+    #picker {
+      position: absolute;
+      z-index: 1000;
+      display: none;
+    }
+
+    .modal-body {
+      overflow-x: auto;
+      max-height: calc(100vh - 75px);
+      overflow-y: auto;
+    }
+  </style>
+
+  </script>
+  <script type="module" crossorigin src="./assets/index-9ce6fb56.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/svelte-fdfc2579.js">
+  <link rel="modulepreload" crossorigin href="./assets/core-js-bbf708ea.js">
+  <link rel="modulepreload" crossorigin href="./assets/lodash-6eb5ace2.js">
+  <link rel="modulepreload" crossorigin href="./assets/heap-8ffeb77a.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-86e840ae.js">
+  <link rel="modulepreload" crossorigin href="./assets/functional-red-black-tree-9a31655a.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-grid-guide-eb2f2e88.js">
+  <link rel="modulepreload" crossorigin href="./assets/lodash.memoize-ae7939c9.js">
+  <link rel="modulepreload" crossorigin href="./assets/lodash.throttle-e32db46a.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-edgehandles-455db19b.js">
+  <link rel="modulepreload" crossorigin href="./assets/uuid-a960c1f4.js">
+  <link rel="modulepreload" crossorigin href="./assets/graphlib-a6487d85.js">
+  <link rel="modulepreload" crossorigin href="./assets/dagre-9b2543cb.js">
+  <link rel="modulepreload" crossorigin href="./assets/jszip-133f2485.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-svg-5a8e6db6.js">
+  <link rel="modulepreload" crossorigin href="./assets/file-saver-05fab67f.js">
+  <link rel="modulepreload" crossorigin href="./assets/@babel-75df473a.js">
+  <link rel="modulepreload" crossorigin href="./assets/fflate-8981c52c.js">
+  <link rel="modulepreload" crossorigin href="./assets/jspdf-a7c15206.js">
+  <link rel="modulepreload" crossorigin href="./assets/cssesc-5de85916.js">
+  <link rel="modulepreload" crossorigin href="./assets/font-family-papandreou-066b018a.js">
+  <link rel="modulepreload" crossorigin href="./assets/svgpath-76644159.js">
+  <link rel="modulepreload" crossorigin href="./assets/specificity-c7128631.js">
+  <link rel="modulepreload" crossorigin href="./assets/svg2pdf.js-d0866cf6.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-dagre-a4f19369.js">
+  <link rel="modulepreload" crossorigin href="./assets/layout-base-45dab9bc.js">
+  <link rel="modulepreload" crossorigin href="./assets/cose-base-3e61f9ec.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-fcose-2999cda1.js">
+  <link rel="modulepreload" crossorigin href="./assets/webcola-fe958753.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-cola-af60e250.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-context-menus-cfc05c35.js">
+  <link rel="modulepreload" crossorigin href="./assets/@jaames-324f80d4.js">
+  <link rel="modulepreload" crossorigin href="./assets/jquery-793df3aa.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-panzoom-81d89c13.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-undo-redo-eac3a982.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-automove-085c6bfa.js">
+  <link rel="modulepreload" crossorigin href="./assets/konva-bc9c0e16.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-node-editing-170df28d.js">
+  <link rel="modulepreload" crossorigin href="./assets/cytoscape-edge-editing-b8b574b0.js">
+  <link rel="stylesheet" href="./assets/cytoscape-context-menus-1313501e.css">
+  <link rel="stylesheet" href="./assets/index-236fa2ae.css">
+</head>
+
+<body>
+  <div class="modal fade" tabindex="-1" role="dialog" id="data-modal-2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Data Viewer (Double click on column name to change)</h4>
+        </div>
+        <div class="modal-body">
+          {{ DT::DTOutput(shiny::NS("dataViewer","tbl_data"), width = "100%", height = "auto") }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="data-modal-extend-results">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ lavaangui:::extendResultsUI("extend") }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="picker"></div>
+
+  <div id="app"></div>
+  
+</body>
+
+</html>
