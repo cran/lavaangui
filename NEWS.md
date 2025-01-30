@@ -1,3 +1,13 @@
+# lavaangui 0.2.3
+
+- First version automatic undirected edge bend
+- Multiple bug fixes
+
+# lavaangui 0.2.2
+
+- Renamed Download to Save
+- Fixed bug that enforced fixed values to be integers
+
 # lavaangui 0.2.1
 Multiple bug fixes:
 
