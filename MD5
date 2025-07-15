@@ -1,6 +1,6 @@
-bb4a288edbb01461565062a096dd1fd6 *DESCRIPTION
+d6866466b53211d2e44e58f3dedab00a *DESCRIPTION
 8f862b1168b8fb46ce41abdced6b68d1 *NAMESPACE
-7ab304d1f9236e0f173edba6748c3424 *NEWS.md
+8abb9c4abd2e7718a8aef219028d32ca *NEWS.md
 28c7ebd3879b8a9fc601767d65d27933 *R/componentExactTest.R
 d5de29f57ccae4c5832e35b5523ff703 *R/componentFactorScores.R
 df42c37c07932c71047aec5fa18d30ff *R/componentLavInspect.R
@@ -56,8 +56,8 @@ c06608b4316bb6cc8cc1e2408330d937 *inst/www/assets/font-family-papandreou-e99f115
 bd6d7b151030cb71b82bc3897cb69ca4 *inst/www/assets/functional-red-black-tree-9a31655a.js
 ccf5d14fbd1f18dfa3b89417f0aad2a0 *inst/www/assets/graphlib-04d9d874.js
 19a537a06ac69a98e5b51f60bf50f92f *inst/www/assets/html2canvas-e0a7d97b.js
-8494689066adc4a53d2be7aa24bbd4bb *inst/www/assets/index-45781b04.js
 faf53a8c0e53165f432cb463e166ce81 *inst/www/assets/index-7e3ae6b2.css
+f292ab63597d9bf25a630fd7d52ac7a5 *inst/www/assets/index-cf36f4da.js
 25ff8a72f8f4e90db37a7239eb61efa7 *inst/www/assets/jquery-fb849a2e.js
 38d5831003ad05b77008af9b3793fbdc *inst/www/assets/jspdf-f4d4ca1d.js
 77a27f0d7ec893dcd1ecf77f8eb39ed8 *inst/www/assets/jszip-84e7feea.js
@@ -77,7 +77,7 @@ a87b306101f80874e567c570e2d7ebaf *inst/www/assets/svg-pathdata-801e7ebc.js
 51b04d83b72a677086cb39cf086c789a *inst/www/assets/svgpath-0da963bf.js
 f7af876be9ec3b1e852f640e4ef6523e *inst/www/assets/uuid-4a60fe23.js
 f0a479dfa04afad65f6c37c7d30fbd49 *inst/www/assets/webcola-fa77233e.js
-626bcd83b93c8a69531160d270693c9e *inst/www/index.html
+166e2dd697b275b50e690649192a933d *inst/www/index.html
 64ed8f8f7b1d515b6335dee9b0928e76 *man/lavaangui.Rd
 6cbbfdadcd1049589abd2eb70624aa1a *man/plot_lavaan.Rd
 dbe3f3009c573567d600bdf1db778fd9 *tests/manual/cfa.R
