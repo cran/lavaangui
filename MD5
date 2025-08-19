@@ -1,6 +1,6 @@
-d6866466b53211d2e44e58f3dedab00a *DESCRIPTION
+a00b5dc8eab8c0f1d0e12054c3048bda *DESCRIPTION
 8f862b1168b8fb46ce41abdced6b68d1 *NAMESPACE
-8abb9c4abd2e7718a8aef219028d32ca *NEWS.md
+d452a3bb7fac6925aad9a21039aeaca0 *NEWS.md
 28c7ebd3879b8a9fc601767d65d27933 *R/componentExactTest.R
 d5de29f57ccae4c5832e35b5523ff703 *R/componentFactorScores.R
 df42c37c07932c71047aec5fa18d30ff *R/componentLavInspect.R
@@ -24,7 +24,7 @@ e97705e620737abc93186dca6bfd83d7 *R/serverDownloader.R
 d6736d98ffea05cffb8d7a3aef3c8b2f *R/serverLavaanRun.R
 102995bcf0dbaad0051d7ac511ade2ef *R/serverLayout.R
 56219bcfa0c4ac30f1745aa1c538ccab *R/serverResultUpdater.R
-64a6fd4b521bbbeb9d519e9b7a677034 *R/start_app.R
+010bfc5787a644dfdfe9680df5ee7061 *R/start_app.R
 b87eefb341a37c7c4efad870d4a53593 *R/zzz.R
 8e7b8214cd1e618948572945cc501ee6 *inst/CITATION
 8928276ac830996f6ff004772a353766 *inst/www/assets/@babel-f352b073.js
@@ -57,7 +57,7 @@ bd6d7b151030cb71b82bc3897cb69ca4 *inst/www/assets/functional-red-black-tree-9a31
 ccf5d14fbd1f18dfa3b89417f0aad2a0 *inst/www/assets/graphlib-04d9d874.js
 19a537a06ac69a98e5b51f60bf50f92f *inst/www/assets/html2canvas-e0a7d97b.js
 faf53a8c0e53165f432cb463e166ce81 *inst/www/assets/index-7e3ae6b2.css
-f292ab63597d9bf25a630fd7d52ac7a5 *inst/www/assets/index-cf36f4da.js
+b627c6a04a1c02b79ebcc4b6b6022d71 *inst/www/assets/index-f9f1a2f2.js
 25ff8a72f8f4e90db37a7239eb61efa7 *inst/www/assets/jquery-fb849a2e.js
 38d5831003ad05b77008af9b3793fbdc *inst/www/assets/jspdf-f4d4ca1d.js
 77a27f0d7ec893dcd1ecf77f8eb39ed8 *inst/www/assets/jszip-84e7feea.js
@@ -77,7 +77,7 @@ a87b306101f80874e567c570e2d7ebaf *inst/www/assets/svg-pathdata-801e7ebc.js
 51b04d83b72a677086cb39cf086c789a *inst/www/assets/svgpath-0da963bf.js
 f7af876be9ec3b1e852f640e4ef6523e *inst/www/assets/uuid-4a60fe23.js
 f0a479dfa04afad65f6c37c7d30fbd49 *inst/www/assets/webcola-fa77233e.js
-166e2dd697b275b50e690649192a933d *inst/www/index.html
+bad8091e636fd3f0582e6dc448b8235e *inst/www/index.html
 64ed8f8f7b1d515b6335dee9b0928e76 *man/lavaangui.Rd
 6cbbfdadcd1049589abd2eb70624aa1a *man/plot_lavaan.Rd
 dbe3f3009c573567d600bdf1db778fd9 *tests/manual/cfa.R

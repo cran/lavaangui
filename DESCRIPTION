@@ -1,7 +1,7 @@
 Package: lavaangui
 Title: Graphical User Interface with Integrated 'Diagrammer' for
         'Lavaan'
-Version: 0.2.5
+Version: 0.2.6
 Authors@R: 
     person(c("Julian",  "D."), "Karch",
     email = "j.d.karch@fsw.leidenuniv.nl", 
@@ -25,12 +25,12 @@ Imports: base64enc (>= 0.1.3), future (>= 1.33.0), haven (>= 2.5.3),
         (>= 0.6.35)
 Encoding: UTF-8
 RoxygenNote: 7.3.2
-Date: 2025-07-15
+Date: 2025-08-19
 Language: en-US
 NeedsCompilation: no
-Packaged: 2025-07-15 08:08:10 UTC; karch
+Packaged: 2025-08-19 11:53:22 UTC; karch
 Author: Julian D. Karch [aut, cre, cph] (ORCID:
     <https://orcid.org/0000-0002-1625-2822>)
 Maintainer: Julian D. Karch <j.d.karch@fsw.leidenuniv.nl>
 Repository: CRAN
-Date/Publication: 2025-07-15 08:20:02 UTC
+Date/Publication: 2025-08-19 12:20:07 UTC
