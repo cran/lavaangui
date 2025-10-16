@@ -46,7 +46,7 @@ serverLayout <- function(id, fit, full, imported) {
             "lav_warning_error",
             list(origin = "layout", message = e$message, type = "danger")
           )
-          print(e$message)
+          message(sprintf("[lav_error][layout] %s", e$message))
         }
       )
     })

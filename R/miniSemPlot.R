@@ -172,17 +172,20 @@ setMethod("semPlotModel_S4",signature("lavaan"),function(object){
     manifest = c(varNames,factNames)%in%varNames,
     exogenous = NA,
     stringsAsFactors=FALSE)
+  call_obj <- lavTech(object, "call")
+  if(!("do.fit" %in% names(call_obj)) || call_obj$do.fit){
+    if (lavInspect(object, "options")$conditional.x){
+      semModel@ObsCovs <- lapply(lavTech(object, "sampstat"),"[[","res.cov")
+    } else {
+      semModel@ObsCovs <- lapply(lavTech(object, "sampstat"),"[[","cov")
+    }  
   
-  if (lavInspect(object, "options")$conditional.x){
-    semModel@ObsCovs <- lapply(lavTech(object, "sampstat"),"[[","res.cov")
-  } else {
-    semModel@ObsCovs <- lapply(lavTech(object, "sampstat"),"[[","cov")
-  }
   
-  names(semModel@ObsCovs) <- lavInspect(object, "group.label")
-  for (i in 1:length(semModel@ObsCovs))
-  {
-    rownames(semModel@ObsCovs[[i]]) <- colnames(semModel@ObsCovs[[i]]) <- lavaanNames(object, type="ov") #object@Data@ov.names[[i]]
+    names(semModel@ObsCovs) <- lavInspect(object, "group.label")
+    for (i in 1:length(semModel@ObsCovs))
+    {
+      rownames(semModel@ObsCovs[[i]]) <- colnames(semModel@ObsCovs[[i]]) <- lavaanNames(object, type="ov") #object@Data@ov.names[[i]]
+    }
   }
   
   semModel@ImpCovs <- lapply(lavTech(object, "implied"), "[[", "cov")

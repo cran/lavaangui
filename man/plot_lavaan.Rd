@@ -23,7 +23,7 @@ That is, their appearance can be customized easily, for example, by dragging
 around nodes representing variable with the mouse.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 library(lavaan)
 model <- ' 
   visual  =~ x1 + loadingx2*x2 + x3

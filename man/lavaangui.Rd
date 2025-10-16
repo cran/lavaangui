@@ -21,7 +21,7 @@ Currently, multiple-group models are not supported. However, you can create an
 interactive plot of those models using \code{\link{plot_lavaan}}
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 # Without importing lavaan model
 lavaangui()
 
